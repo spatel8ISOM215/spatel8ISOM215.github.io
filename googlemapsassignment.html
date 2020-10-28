@@ -79,23 +79,44 @@ footer {
 </header>
 <nav class="w3-sidebar w3-bar-block w3-light-grey" style="width:180px">
 
-<!-- Boston Campus -->
-<a href="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=8%20Ashburton%20Place%2C%20Boston%2C%20MA+(Suffolk%20University)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" target="myframe">Boston</a>
 
-<!-- Madrid Campus -->
-<a href="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=40.4167047 ,-3.7035825&amp;q=Calle%20de%20la%20Vi%C3%B1a%2C%203%20%20E-28003%20Madrid%2C%20Spain+(Suffolk%20University%20Madrid%20)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" target="myframe">Madrid</a>
+            <!-- Boston Campus -->
+            <a onclick="changearticle1();" href="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=8%20Ashburton%20Place%2C%20Boston%2C%20MA+(Suffolk%20University)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" target="myframe">Boston</a>
 
-</nav>
-<section>
-  
-  <article name=article1>
-    <p>Suffolk University's Boston campus is located in the heart of Boston, Massachusetts.</p>
-    <p>Located on historic Beacon Hill, the campus blends in with the surrounding downtown area. The Sawyer School of Business ISOM department is particulary good.</p>
-  </article>
-  
-  <!--
-  <div id="googleMap" style="width:100%;height:400px;"></div>
-  -->
+            <!-- Madrid Campus -->
+            <a onclick="changearticle2();" href="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=40.4167047 ,-3.7035825&amp;q=Calle%20de%20la%20Vi%C3%B1a%2C%203%20%20E-28003%20Madrid%2C%20Spain+(Suffolk%20University%20Madrid%20)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"
+                target="myframe">Madrid</a>
+
+            
+
+      </nav>
+        <section>
+
+            <article id=article1>
+                <p>Suffolk University's Boston campus is located in the heart of Boston, Massachusetts.</p>
+                <p>Located on historic Beacon Hill, the campus blends in with the surrounding downtown area. The Sawyer School of Business ISOM department is particulary good.</p>
+            </article>
+
+            <script type="text/javascript">
+                function changearticle1() {
+
+                    document.getElementById("article1").innerHTML = "<p>Suffolk University's Boston campus is located in the heart of Boston, Massachusetts. " + "</p>" + "<p>Located on historic Beacon Hill, the campus blends in with the surrounding downtown area. The Sawyer School of Business ISOM department is particulary good." + "</p>"
+
+                    var oldHTML = document.getElementById('article1').innerHTML;
+                    var newHTML = "<span style='color:blue'>" + oldHTML + "</span>";
+                    document.getElementById('article1').innerHTML = newHTML;
+                }
+
+
+                function changearticle2() {
+
+                    document.getElementById("article1").innerHTML = "Suffolk University's Madrid Campus is located outside the city of Madrid near Chamberi.The campus is near many local colleges and is near the heart of city of Madrid. Students can experience a new city while also learning about the culture of the country."
+
+                    var oldHTML = document.getElementById('article1').innerHTML;
+                    var newHTML = "<span style='color:blue'>" + oldHTML + "</span>";
+                    document.getElementById('article1').innerHTML = newHTML;
+                }
+
 <!-- Boston Campus LatLng(42.3589785,-71.061772) -->
 <!-- zoom levels are 0 to 18-->
 <!-- Madrid Campus coordinates are: 40.4168, 3.7038 -->
