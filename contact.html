@@ -72,6 +72,20 @@ footer { font-size: .80em;
              width: 80%;
              min-width: 800px;
               box-shadow: 5px 5px 5px #1e1e1e;
+	<h2>Send us your feedback.</h2>
+  <form method="post">
+  <label>Name:</label><br>
+  <input id="submitter_name" type="text" size="45"><br>
+   <br> <label>Email Address: </label><br>
+  <input id="email_address" type="email" required size="45"><br>
+    <br>  <label>Contact Notes: </label><br>
+  <textarea id="mytextarea"  name="notes" rows = "3" cols ="100" maxlength="300">
+How can we do better?
+</textarea>
+<br>  
+  <p><input style="margin-left: 114px" type="button" src="email3.png" value="Send Email" onclick="sendEmail('foo')"/></p>
+<br /> 
+ </form>
 			 }
 </style>
 <script type="text/javascript">
