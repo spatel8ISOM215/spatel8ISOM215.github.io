@@ -45,36 +45,37 @@ footer { font-size: .80em;
 
 </head>
 
- <script>
-        function setIframeSrc(id, url) {
-            document.getElementById("myframe").src = url;
 
-            document.getElementByName("myframe").src = "http://www.boston.com";
-            document.getElementById("myframe").src = "https://maps.google.com/maps?width=100%&amp;height=800&amp;hl=en&amp;coord=40.4167047 ,-3.7035825&amp;q=Calle%20de%20la%20Vi%C3%B1a%2C%203%20%20E-28003%20Madrid%2C%20Spain+(Suffolk%20University%20Madrid%20)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed";
-
-
-        }
-
-
-    </script>
 <body>
 <div id="container">
 <header>
-<h1>Locations</h1>
+<h1>Stocks</h1>
 </header>
-<nav>
-	<a href=index.html>Home</a>
-	
-	<a onclick="changearticle1();" href="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=8%20Ashburton%20Place%2C%20Boston%2C%20MA+(Suffolk%20University)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" target="myframe">Libraries</a>
-
-	<a onclick="changearticle1();" href="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=8%20Ashburton%20Place%2C%20Boston%2C%20MA+(Suffolk%20University)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" target="myframe">Stores</a>
-
-
-            
-</nav>
- 
-     <div style="width: 100%"><iframe name="myframe" width="100%" height="300%" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=8%20Ashburton%20Place%2C%20Boston%2C%20MA+(Suffolk%20University)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_b81b9"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 980,
+  "height": 610,
+  "symbol": "NASDAQ:AAPL",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "container_id": "tradingview_b81b9"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
 
  
 
